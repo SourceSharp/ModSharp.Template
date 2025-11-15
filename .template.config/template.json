@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "ModSharp",
+  "classifications": [ "Library", "ModSharp" ],
+  "identity": "ModSharp.Module.Template",
+  "name": "ModSharp Module",
+  "shortName": "modsharp-module",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "ModuleName",
+  "preferNameDirectory": true,
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [
+            "ModSharp.Template.csproj",
+            "README.md",
+            "**/bin/**",
+            "**/obj/**",
+            "**/.git/**",
+            "**/.vs/**",
+            ".gitignore"
+          ]
+        }
+      ]
+    }
+  ],
+  "symbols": {
+    "DisplayName": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "Project",
+      "replaces": "ProjectDisplayName",
+      "description": "The display name of the module"
+    },
+    "DisplayAuthor": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "Author",
+      "replaces": "ProjectDisplayAuthor",
+      "description": "The display author of the module"
+    },
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net10.0",
+          "description": ".NET 10.0"
+        }
+      ],
+      "defaultValue": "net10.0",
+      "replaces": "net10.0",
+      "description": "The target framework for the project"
+    }
+  },
+  "forms": {
+    "xmlEncode": {
+      "identifier": "xmlEncode"
+    }
+  }
+}
