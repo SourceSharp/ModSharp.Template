@@ -8,8 +8,15 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="ModSharp.Sharp.Extensions.CommandManager" Version="*" />
+		<PackageReference Include="ModSharp.Sharp.Extensions.GameEventManager" Version="*" />
+		<PackageReference Include="ModSharp.Sharp.Extensions.EntityHookManager" Version="*" />
 		<PackageReference Include="ModSharp.Sharp.Shared" Version="*" PrivateAssets="all" />
-
+		<PackageReference Include="ModSharp.Sharp.Modules.LocalizerManager.Shared" Version="*" PrivateAssets="all" />
+		<PackageReference Include="ModSharp.Sharp.Generator.Sdk" Version="*">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 </Project>
 
